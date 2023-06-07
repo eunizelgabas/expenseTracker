@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    @apply px-4 lg:px-0;
+}
+
+.btn-primary{
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded
+}
+
+.btn-danger{
+    @apply bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded
+}
+
+.overlay {
+    z-index: 100;
+    background-color: #222;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @apply min-h-full min-w-full
+}
+
+.dialog-wrapper {
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @apply min-h-full min-w-full flex justify-center items-center
+}
+
+.dialog-wrapper .dialog {
+    @apply bg-purple-300 p-4 rounded-lg min-w-[600px]
+}
+
+.lay {
+    z-index: 100;
+    background-color: #222;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @apply min-h-full min-w-full
+}
+
+ .d-wrapper{
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @apply min-h-full min-w-full flex justify-center items-center
+}
+
+.d-wrapper .dialog {
+    @apply bg-red-300 p-4 rounded-lg min-w-[600px]
+}
